@@ -1,0 +1,10 @@
+# Créer un réseau interne de type overlay que vous nommerez overmind.
+
+docker network create --driver overlay overmind
+
+# docker network create: create a network
+# --driver , -d bridge Driver to manage the Network
+# overlay is the built-in network driver
+# overlay : creates a network that spans multiple Docker hosts each running an Engine
+# gives a result smtg like : 8b2z10wbbekhi1yxuzg47l4a4
+# docker network ls : to check if it worked

@@ -1,0 +1,8 @@
+docker run --name spawning-pool -d --restart=on-failure --env MYSQL_ROOT_PASSWORD=Kerrigan --env MYSQL_DATABASE=zerglings -v hatchery:/var/lib/mysql mysql --default-auth=mysql_native_password -p
+
+# to launch mysql :
+# docker exec -it spawning-pool bash
+# mysql -u root -p
+# enter the password
+# SHOW DATABASES;
+# etc;

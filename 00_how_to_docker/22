@@ -1,0 +1,12 @@
+# Basculer Aiur comme esclave du swarm local où Char est leader (La commande
+# de prise de contrôle de Aiur n’est pas demandée).
+
+docker-machine ssh Aiur "docker swarm join --token $(docker swarm join-token worker -q) $(docker-machine ip Char):2377"
+
+# docker-machine ssh Aiur = launch the command following the ""
+# Worker =			node / you increase the scale of the swarm to handle tasks without affecting the manager raft consensus
+# join				Join a swarm as a node and/or manager
+# --token string	Token for entry into the swarm
+# -q, --quiet		Only display token
+#
+# docker node ls : to verify that Char is still leader
