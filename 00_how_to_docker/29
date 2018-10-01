@@ -1,0 +1,3 @@
+# 29. Display all the tasks of the marines service.i
+
+docker service ps marines

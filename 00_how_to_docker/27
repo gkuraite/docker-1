@@ -1,0 +1,11 @@
+# 27. Get the real-time logs of one the tasks of the engineering-bay service.
+
+docker service logs \
+--follow \
+$(docker service ps engineering-bay --filter "name=engineering-bay.2" --quiet)
+
+# docker service logs [OPTIONS] SERVICE|TASK
+# --follow : Follow log output
+
+# docker service ps [OPTIONS] SERVICE [SERVICE...]
+# -f, --filter filter   Filter output based on conditions provided

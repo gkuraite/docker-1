@@ -1,10 +1,8 @@
 # Démarrer un container qui se nommera Abathur. Abathur sera un container Python
 # en version 2-slim, qui aura son dossier /root bindé à un dossier du HOME de votre
 # host, ainsi que le port 3000 bindé au port 3000 de votre machine virtuelle
-
 # Vous personnaliserez ce container de telle sorte que vous puissiez utiliser 
 # le micro-framework Flask dans sa dernière version
-
 # Vous devrez faire en sorte qu’une pagehtml renvoyant un "Hello World" dans
 # des balises <h1>, soit servie par Flask
 
