@@ -4,7 +4,7 @@
 
 docker service update --replicas 20 marines
 
- # docker service scale --detach marines=20
+# docker service scale --detach marines=20
 
 # scale : Scale one or multiple replicated services
 # -d, --detach   Exit immediately instead of waiting for the service to converge

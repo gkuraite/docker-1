@@ -2,3 +2,5 @@
 # in one command as well.
 
 docker rmi --force $(docker images --all --quiet)
+
+# rmi : remove one or more images

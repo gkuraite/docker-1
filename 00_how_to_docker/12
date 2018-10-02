@@ -13,7 +13,7 @@ docker run \
 mysql \
 --default-authentication-plugin=mysql_native_password
 
-# --default-auth=mysql_native_password -p -> Wordpress latest does not works 
+# --default-authentication-plugin=mysql_native_password -> Wordpress latest does not works 
 # with mysql latest container 
 # https://github.com/docker-library/wordpress/issues/313
 # https://dev.mysql.com/doc/refman/8.0/en/native-pluggable-authentication.html
@@ -23,5 +23,7 @@ mysql \
 # mysql -u root -p
 # enter the password
 # SHOW DATABASES;
+# USE zerglings;
+# SHOW TABLES;
 # etc;
 # to quit : QUIT;

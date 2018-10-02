@@ -2,3 +2,9 @@
 # named Char
 
 docker-machine create --driver virtualbox Char
+
+# Create a machine. Requires the --driver flag to indicate which provider 
+# (VirtualBox, DigitalOcean, AWS, etc.) the machine should be created on, and 
+# an argument to indicate the name of the created machine.
+#
+#More info : https://docs.docker.com/machine/reference/create/

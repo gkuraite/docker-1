@@ -15,5 +15,3 @@ docker service create \
 --env OC_USERNAME=root \
 --env OC_PASSWD=password \
 42school/marine-squad
-
-

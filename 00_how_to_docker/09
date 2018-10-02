@@ -5,7 +5,7 @@
 # to be run directly in the container.
 
 # Start Debian container:
-# docker run -ti --rm debian
+# docker run --interactive --tty --rm debian
 
 apt-get update
 apt-get upgrade -y
@@ -13,3 +13,4 @@ apt-get install -y build-essential git
 
 # for the latest stable version of debian, do this :
 # apt-get install git
+# http://pwet.fr/man/linux/administration_systeme/apt_get

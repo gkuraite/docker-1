@@ -1,4 +1,5 @@
-# Créer un réseau interne de type overlay que vous nommerez overmind.
+# 23. Create an overlay-type internal network that you will name overmind.
+# https://docs.docker.com/engine/reference/commandline/network_create/#related-commands
 
 docker network create --driver overlay overmind
 

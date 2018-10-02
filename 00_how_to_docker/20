@@ -1,7 +1,9 @@
-#Créer un swarm local où la machine virtuelle Char en est le manage
+# 20. Create a local swarm, the Char virtual machine should be its manager.
+# https://docs.docker.com/engine/reference/commandline/swarm_init/#--cert-expiry
 
 docker swarm init --advertise-addr $(docker-machine ip Char)
 
 # swarm = consists of multiple Docker hosts which run in swarm mode 
 # and act as managers (to manage membership and delegation) and workers 
 # (which run swarm services)
+#  --advertise-addr string : Advertised address (format: <ip|interface>[:port])

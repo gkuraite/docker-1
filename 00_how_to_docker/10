@@ -1,6 +1,13 @@
 # 10. Create a volume named hatchery.
+#
+# Volumes = directories that are stored outside of the container’s filesystem
+# and which hold reusable and shareable data that can persist even when containers 
+# are terminated. This data can be reused by the same service on redeployment, 
+# or shared with other services.
+# https://docs.docker.com/docker-cloud/apps/volumes/#reuse-data-volumes-from-another-service
 
 docker volume create hatchery
 
+# https://docs.docker.com/engine/reference/commandline/volume_create/
 # to check :
 # docker volume ls

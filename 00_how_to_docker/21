@@ -1,4 +1,4 @@
-# Créer une autre machine virtuelle avec docker-machine utilisant 
-# le driver virtualbox et ayant pour nom Aiur
+# 21. Create another virtual machine with docker-machine using the virtualbox driver,
+# and name it Aiur.
 
 docker-machine create --driver virtualbox Aiur

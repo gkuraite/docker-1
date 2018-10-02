@@ -3,4 +3,8 @@
 # to fix all four environment variables with one command, and you are not allowed
 # to use your shell’s builtin to set these variables by hand.
 
+# https://docs.docker.com/machine/reference/env/
+
 eval $(docker-machine env Char)
+
+# eval - construct command by concatenating arguments

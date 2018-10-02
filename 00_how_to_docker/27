@@ -4,6 +4,11 @@ docker service logs \
 --follow \
 $(docker service ps engineering-bay --filter "name=engineering-bay.2" --quiet)
 
+#If desire state presents shutdowns, use the following command :
+#docker service logs                                                                                                     \
+#--follow                                                                                                                \
+#$(docker service ps --no-trunc engineering-bay --filter "name=engineering-bay.2" | grep -v "Shutdown" | grep -v "ID" | cut -d ' ' -f 1)
+
 # docker service logs [OPTIONS] SERVICE|TASK
 # --follow : Follow log output
 

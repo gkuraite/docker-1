@@ -2,4 +2,10 @@
 # directly with the container via your terminal, and that the container deletes itself
 # once the shell’s execution is done.
 
-docker run -it --rm alpine /bin/sh
+docker run --interactive --tty --rm alpine /bin/sh
+
+#  -i, --interactive : Keep STDIN open even if not attached
+#  -t, --tty : Allocate a pseudo-TTY
+#	using  -i and -t  will allow you to use the container like a 
+#  traditional VM as long as the bash prompt is running.
+#  --rm : Automatically remove the container when it exits
